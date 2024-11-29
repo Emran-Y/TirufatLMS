@@ -47,7 +47,7 @@ const CreateCourse = () => {
   };
 
   return (
-    <div className="max-w-5xl mx-auto flex flex-col md:items-center md:justify-center h-full p-6">
+    <div className="max-w-5xl flex flex-col md:justify-center h-full p-6">
       <div>
         <h1 className="text-2xl">Name your course</h1>
         <p className="text-sm text-slate-600">
@@ -56,7 +56,7 @@ const CreateCourse = () => {
         </p>
       </div>
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 mt-8">
+        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 mt-8 max-w-xl">
           <FormField
             control={form.control}
             name="title"

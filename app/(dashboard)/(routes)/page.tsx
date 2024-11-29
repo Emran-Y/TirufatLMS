@@ -1,11 +1,7 @@
-import { UserButton } from '@clerk/nextjs'
 import React from 'react'
 
-const DashBoard = () => {
+export default function TeacherPage() {
   return (
-    <div>
-    </div>
+    <div>TeacherPage</div>
   )
 }
-
-export default DashBoard
