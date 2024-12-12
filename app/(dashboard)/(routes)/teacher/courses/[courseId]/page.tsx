@@ -1,21 +1,17 @@
 import { IconBadge } from "@/components/icon-badge";
 import { db } from "@/lib/db";
-import { auth, getAuth } from "@clerk/nextjs/server";
+import { auth} from "@clerk/nextjs/server";
 import { LayoutDashboard } from "lucide-react";
 import { redirect } from "next/navigation";
-import { NextRequest } from "next/server";
 import React from "react";
 import { TitleForm } from "./_components/title-form";
-import { Description } from "@radix-ui/react-dialog";
 import { DescriptionForm } from "./_components/description-form";
 const CourseIdPage = async ({
   params,
-  req,
 }: {
   params: {
     courseId: string;
   };
-  req: NextRequest;
 }) => {
   const { userId } = auth();
 
